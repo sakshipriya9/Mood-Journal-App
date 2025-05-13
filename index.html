@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Journal App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Mood Journal...</h1>
+
+    <div class="journal-form">
+      <label for="mood"> Today's Mood: </label>
+
+      <select id="mood">
+        <option value="😊 Happy">😊 Happy</option>
+        <option value="😔 Sad">😔 Sad</option>
+        <option value="😡 Angry">😡 Angry</option>
+        <option value="😌 Calm">😌 Calm</option>
+        <option value="😕 Confused">😕 Confused</option>
+      </select>
+
+      <label for="entry"> Your Journal Entry: </label>
+      <textarea id="entry" placeholder="Write your thoughts here..."></textarea>
+
+      <button onclick="saveEntry()"> Save Entry </button>
+    </div>
+
+    <h2> Past Entries </h2>
+    <div class="entries"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
